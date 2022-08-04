@@ -1,5 +1,5 @@
 {
-  "name": "Project Manager",
+  "name": "project_manager",
   "version": "1.0.0",
   "description": "Drag and drop project manager",
   "main": "app.js",
