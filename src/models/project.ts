@@ -1,9 +1,10 @@
-// Project Status
+// ProjectStatus
 export enum ProjectStatus {
   Active,
   Finished,
 }
 
+// Project Class
 export class Project {
   constructor(
     public id: string,

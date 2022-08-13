@@ -1,11 +1,11 @@
-import Component from './base-component.js';
-import { DragTarget } from '../models/drag-drop.js';
-import { Project, ProjectStatus } from '../models/project.js';
-import { autobind } from '../decorators/autobind.js';
-import { projectState } from '../state/project-state.js';
-import { ProjectItem } from './project-item.js';
+import Component from './base-component';
+import { DragTarget } from '../models/drag-drop';
+import { Project, ProjectStatus } from '../models/project';
+import { autobind } from '../decorators/autobind';
+import { projectState } from '../state/project-state';
+import { ProjectItem } from './project-item';
 
-// ProjectList class
+// ProjectList Class
 export class ProjectList
   extends Component<HTMLDivElement, HTMLElement>
   implements DragTarget
@@ -27,9 +27,6 @@ export class ProjectList
       const listEl = this.element.querySelector('ul')!;
       listEl.classList.add('droppable');
     }
-
-    const listEl = this.element.querySelector('ul')!;
-    listEl.classList.add('droppable');
   }
 
   @autobind
